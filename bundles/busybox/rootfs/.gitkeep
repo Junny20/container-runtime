@@ -1,0 +1,9 @@
+# The container root filesystem is built by ../fetch-rootfs.sh and is NOT
+# committed to git (see .gitignore). This file just keeps the directory present
+# in the source tree so the bundle layout is visible.
+#
+# To populate it:
+#     ./bundles/busybox/fetch-rootfs.sh
+#
+# That produces bin/sh (busybox, or a static smoke-test payload) plus the
+# skeleton dirs the runtime mounts (proc, sys, dev, ...).
